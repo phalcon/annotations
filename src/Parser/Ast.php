@@ -35,7 +35,7 @@ final class Ast
     /**
      * `phannot_ret_annotation()`. Key order: type, name, arguments, file, line.
      *
-     * @param list<array<string, mixed>> | null $arguments
+     * @param list<array<string, mixed>>|null $arguments
      *
      * @return array<string, mixed>
      */
@@ -63,7 +63,7 @@ final class Ast
     /**
      * `phannot_ret_array()`. Both `{...}` and `[...]` produce this same node.
      *
-     * @param list<array<string, mixed>> | null $items
+     * @param list<array<string, mixed>>|null $items
      *
      * @return array<string, mixed>
      */

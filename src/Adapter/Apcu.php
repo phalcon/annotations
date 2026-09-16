@@ -58,7 +58,7 @@ class Apcu extends AbstractAdapter
     /**
      * Reads parsed annotations from APCu
      */
-    public function read(string $key): Reflection | bool
+    public function read(string $key): bool | Reflection
     {
         $data = apcu_fetch($this->buildKey($key));
 

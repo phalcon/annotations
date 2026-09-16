@@ -108,7 +108,7 @@ final class Scanner
      * break;` arm in the C driver that declines to feed them to the parser.
      *
      * @return list<Token>
-     * @throws Exception on an unscannable character
+     * @throws Exception   on an unscannable character
      */
     public function tokenize(): array
     {

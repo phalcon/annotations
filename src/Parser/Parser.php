@@ -83,8 +83,8 @@ final class Parser
      * characters, and one that contains no annotation token at all (`@!`), which
      * never runs the `program` rule.
      *
-     * @return list<array<string, mixed>> | false
-     * @throws Exception on a syntax or scanning error
+     * @return false|list<array<string, mixed>>
+     * @throws Exception                        on a syntax or scanning error
      */
     public function parse(
         string $docBlock,

@@ -68,7 +68,7 @@ class Stream extends AbstractAdapter
      *
      * @throws CannotReadAnnotationData
      */
-    public function read(string $key): Reflection | bool
+    public function read(string $key): bool | Reflection
     {
         /**
          * Paths must be normalized before be used as keys

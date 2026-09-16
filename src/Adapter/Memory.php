@@ -51,7 +51,7 @@ class Memory extends AbstractAdapter
     /**
      * Reads parsed annotations from memory
      */
-    public function read(string $key): Reflection | bool
+    public function read(string $key): bool | Reflection
     {
         return $this->data[strtolower($key)] ?? false;
     }

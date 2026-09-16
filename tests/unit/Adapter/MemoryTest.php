@@ -45,6 +45,7 @@ final class MemoryTest extends AbstractUnitTestCase
 
         $this->assertInstanceOf(Reflection::class, $adapter->get(new \TestClass()));
     }
+
     public function testGetMethodMatchesCaseInsensitively(): void
     {
         $adapter = $this->adapter();

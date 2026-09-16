@@ -54,7 +54,7 @@ class Annotation
         if (isset($reflectionData['name'])) {
             /** @var string $name */
             $name        = $reflectionData['name'];
-            $this->name = $name;
+            $this->name  = $name;
         }
 
         /**

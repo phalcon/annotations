@@ -77,13 +77,13 @@ final class StreamTest extends AbstractUnitTestCase
     {
         $adapter = new Stream(['annotationsDir' => $this->dir]);
 
-        $backslash = new Reflection(['class' => [['type' => 300, 'name' => 'FromBackslash']]]);
+        $backslash  = new Reflection(['class' => [['type' => 300, 'name' => 'FromBackslash']]]);
         $underscore = new Reflection(['class' => [['type' => 300, 'name' => 'FromUnderscore']]]);
 
         $adapter->write('A\\B', $backslash);
         $adapter->write('A_B', $underscore);
 
-        $readBackslash = $adapter->read('A\\B');
+        $readBackslash  = $adapter->read('A\\B');
         $readUnderscore = $adapter->read('A_B');
 
         $this->assertInstanceOf(Reflection::class, $readBackslash);
@@ -119,7 +119,7 @@ final class StreamTest extends AbstractUnitTestCase
          * returning false. That warning is the point of the test, not a problem
          * with it, so it is swallowed rather than left to surface as suite noise.
          */
-        set_error_handler(static fn(): bool => true, E_WARNING);
+        set_error_handler(static fn (): bool => true, E_WARNING);
 
         try {
             $this->expectException(AnnotationsDirectoryNotWritable::class);

@@ -40,7 +40,6 @@ enum Opcode: int
     case INTEGER             = 301;
     case NULL                = 304;
     case PARENTHESES_CLOSE   = 41;
-
     case PARENTHESES_OPEN    = 40;
     case SBRACKET_CLOSE      = 93;
     case SBRACKET_OPEN       = 91;

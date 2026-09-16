@@ -33,12 +33,12 @@ class Reader implements ReaderInterface
     /**
      * Parses a raw doc block returning the annotations found
      *
-     * @return list<array<string, mixed>> | false
-     * @throws Exception on a syntax or scanning error
+     * @return false|list<array<string, mixed>>
+     * @throws Exception                        on a syntax or scanning error
      */
     public static function parseDocBlock(
         string $docBlock,
-        string | bool | null $file = null,
+        bool | string | null $file = null,
         int | null $line = null
     ): array | false {
         if (!is_string($file)) {
@@ -53,7 +53,7 @@ class Reader implements ReaderInterface
      * reach the C parser, where it coerced to 0 and took the "no line given"
      * path; null means the same thing here.
      */
-    private static function toLine(int | false $line): int | null
+    private static function toLine(false | int $line): int | null
     {
         return $line === false ? null : $line;
     }

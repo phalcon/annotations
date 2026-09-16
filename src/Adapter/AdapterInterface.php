@@ -80,7 +80,7 @@ interface AdapterInterface
     /**
      * Reads parsed annotations from the backend, or false when absent
      */
-    public function read(string $key): Reflection | bool;
+    public function read(string $key): bool | Reflection;
 
     /**
      * Sets the annotations parser

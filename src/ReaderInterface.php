@@ -26,13 +26,14 @@ interface ReaderInterface
      * there test for it with `typeof ... == "array"`. The declared type is
      * widened here so the contract matches the behaviour.
      *
-     * @return list<array<string, mixed>> | false
+     * @return false|list<array<string, mixed>>
      */
     public static function parseDocBlock(
         string $docBlock,
-        string | bool | null $file = null,
+        bool | string | null $file = null,
         int | null $line = null
     ): array | false;
+
     /**
      * Reads annotations from the class docblocks, its constants, properties and
      * methods
