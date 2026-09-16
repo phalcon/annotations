@@ -1,0 +1,79 @@
+# For local development only.
+
+name: ${PROJECT_PREFIX:-annotations}
+
+services:
+  annotations-dev-8.1:
+    container_name: ${PROJECT_PREFIX:-annotations}-dev-8.1
+    hostname: ${PROJECT_PREFIX:-annotations}-dev-81
+    build:
+      dockerfile: resources/docker/develop/Dockerfile
+      args:
+        PHP_VERSION: 8.1
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    working_dir: /srv
+    volumes:
+      - .:/srv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  annotations-dev-8.2:
+    container_name: ${PROJECT_PREFIX:-annotations}-dev-8.2
+    hostname: ${PROJECT_PREFIX:-annotations}-dev-82
+    build:
+      dockerfile: resources/docker/develop/Dockerfile
+      args:
+        PHP_VERSION: 8.2
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    working_dir: /srv
+    volumes:
+      - .:/srv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  annotations-dev-8.3:
+    container_name: ${PROJECT_PREFIX:-annotations}-dev-8.3
+    hostname: ${PROJECT_PREFIX:-annotations}-dev-83
+    build:
+      dockerfile: resources/docker/develop/Dockerfile
+      args:
+        PHP_VERSION: 8.3
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    working_dir: /srv
+    volumes:
+      - .:/srv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  annotations-dev-8.4:
+    container_name: ${PROJECT_PREFIX:-annotations}-dev-8.4
+    hostname: ${PROJECT_PREFIX:-annotations}-dev-84
+    build:
+      dockerfile: resources/docker/develop/Dockerfile
+      args:
+        PHP_VERSION: 8.4
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    working_dir: /srv
+    volumes:
+      - .:/srv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  annotations-dev-8.5:
+    container_name: ${PROJECT_PREFIX:-annotations}-dev-8.5
+    hostname: ${PROJECT_PREFIX:-annotations}-dev-85
+    build:
+      dockerfile: resources/docker/develop/Dockerfile
+      args:
+        PHP_VERSION: 8.5
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    working_dir: /srv
+    volumes:
+      - .:/srv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
