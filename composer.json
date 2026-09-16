@@ -16,9 +16,21 @@
         {
             "name": "Phalcon Team",
             "email": "team@phalcon.io",
-            "homepage": "https://phalcon.io"
+            "homepage": "https://phalcon.io/en/team"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/phalcon/annotations/graphs/contributors"
         }
     ],
+    "support": {
+        "email": "support@phalcon.io",
+        "issues": "https://github.com/phalcon/annotations/issues",
+        "source": "https://github.com/phalcon/annotations",
+        "discussions": "https://phalcon.io/discussions/",
+        "docs": "https://phalcon.io/docs/",
+        "rss": "https://blog.phalcon.io/rss"
+    },
     "require": {
         "php": ">=8.1 <9.0",
         "ext-mbstring": "*",
@@ -28,14 +40,25 @@
         "ext-apcu": "Required by the Apcu annotations adapter",
         "phalcon/phalcon": "The Phalcon framework this module integrates with"
     },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "pds/composer-script-names": "^1.0",
+        "pds/skeleton": "^1.0",
+        "phalcon/code-quality": "^1.0",
         "phalcon/talon": "^1.0.0",
         "phpstan/phpstan": "^2.0",
         "phpunit/phpunit": "^10.5",
-        "pds/skeleton": "^1.0",
-        "pds/composer-script-names": "^1.0",
-        "squizlabs/php_codesniffer": "^4.0",
-        "friendsofphp/php-cs-fixer": "^3.95"
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -47,21 +70,15 @@
             "Phalcon\\Annotations\\Docblock\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "scripts": {
+        "analyze": "vendor/bin/phpstan analyse -c resources/phpstan.neon --memory-limit 1024M",
         "cs": "vendor/bin/phpcs --standard=resources/phpcs.xml",
         "cs-fix": "vendor/bin/phpcbf --standard=resources/phpcs.xml",
         "cs-fixer": "vendor/bin/php-cs-fixer fix --config=resources/php-cs-fixer.php --dry-run --diff",
         "cs-fixer-fix": "vendor/bin/php-cs-fixer fix --config=resources/php-cs-fixer.php",
-        "analyze": "vendor/bin/phpstan analyse -c resources/phpstan.neon --memory-limit 1024M",
         "test-unit": "talon run unit -- --fail-on-all-issues",
         "test-unit-coverage": "talon run unit -- --coverage-clover tests/_output/coverage.xml --coverage-php tests/_output/coverage.cov",
         "test-unit-coverage-html": "talon run unit -- --coverage-html tests/_output/coverage/",
         "test-all": "talon run all"
-    },
-    "support": {
-        "issues": "https://github.com/phalcon/annotations/issues",
-        "source": "https://github.com/phalcon/annotations"
     }
 }
