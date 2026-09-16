@@ -1,0 +1,67 @@
+{
+    "name": "phalcon/annotations",
+    "description": "Docblock annotations parser for the Phalcon Framework",
+    "type": "library",
+    "keywords": [
+        "php",
+        "framework",
+        "phalcon",
+        "annotations",
+        "docblock",
+        "parser"
+    ],
+    "homepage": "https://phalcon.io",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Phalcon Team",
+            "email": "team@phalcon.io",
+            "homepage": "https://phalcon.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.1 <9.0",
+        "ext-mbstring": "*",
+        "phalcon/traits": "^4.0"
+    },
+    "suggest": {
+        "ext-apcu": "Required by the Apcu annotations adapter",
+        "phalcon/phalcon": "The Phalcon framework this module integrates with"
+    },
+    "require-dev": {
+        "phalcon/talon": "^1.0.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^10.5",
+        "pds/skeleton": "^1.0",
+        "pds/composer-script-names": "^1.0",
+        "squizlabs/php_codesniffer": "^4.0",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phalcon\\Annotations\\Docblock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phalcon\\Annotations\\Docblock\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "cs": "vendor/bin/phpcs --standard=resources/phpcs.xml",
+        "cs-fix": "vendor/bin/phpcbf --standard=resources/phpcs.xml",
+        "cs-fixer": "vendor/bin/php-cs-fixer fix --config=resources/php-cs-fixer.php --dry-run --diff",
+        "cs-fixer-fix": "vendor/bin/php-cs-fixer fix --config=resources/php-cs-fixer.php",
+        "analyze": "vendor/bin/phpstan analyse -c resources/phpstan.neon --memory-limit 1024M",
+        "test-unit": "talon run unit -- --fail-on-all-issues",
+        "test-unit-coverage": "talon run unit -- --coverage-clover tests/_output/coverage.xml --coverage-php tests/_output/coverage.cov",
+        "test-unit-coverage-html": "talon run unit -- --coverage-html tests/_output/coverage/",
+        "test-all": "talon run all"
+    },
+    "support": {
+        "issues": "https://github.com/phalcon/annotations/issues",
+        "source": "https://github.com/phalcon/annotations"
+    }
+}

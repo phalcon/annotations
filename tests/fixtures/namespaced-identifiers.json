@@ -1,0 +1,28 @@
+[
+    {
+        "type": 300,
+        "name": "Ns",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "\\Foo\\Bar"
+                }
+            },
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "\\Leading"
+                }
+            },
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "Mid\\Dle"
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

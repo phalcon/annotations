@@ -1,0 +1,37 @@
+[
+    {
+        "type": 300,
+        "name": "Named",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "first"
+                }
+            },
+            {
+                "expr": {
+                    "type": 303,
+                    "value": "other"
+                },
+                "name": "second"
+            },
+            {
+                "expr": {
+                    "type": 301,
+                    "value": "3"
+                },
+                "name": "third"
+            },
+            {
+                "expr": {
+                    "type": 301,
+                    "value": "4"
+                },
+                "name": "fourth"
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

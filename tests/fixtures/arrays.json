@@ -1,0 +1,68 @@
+[
+    {
+        "type": 300,
+        "name": "Braces",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 308,
+                    "items": [
+                        {
+                            "expr": {
+                                "type": 301,
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "expr": {
+                                "type": 301,
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "expr": {
+                                "type": 301,
+                                "value": "3"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    },
+    {
+        "type": 300,
+        "name": "Squares",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 308,
+                    "items": [
+                        {
+                            "expr": {
+                                "type": 301,
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "expr": {
+                                "type": 301,
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "expr": {
+                                "type": 301,
+                                "value": "3"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

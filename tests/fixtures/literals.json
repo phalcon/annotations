@@ -1,0 +1,61 @@
+[
+    {
+        "type": 300,
+        "name": "Literals",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 303,
+                    "value": "str"
+                }
+            },
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "ident"
+                }
+            },
+            {
+                "expr": {
+                    "type": 301,
+                    "value": "1"
+                }
+            },
+            {
+                "expr": {
+                    "type": 302,
+                    "value": "1.1"
+                }
+            },
+            {
+                "expr": {
+                    "type": 301,
+                    "value": "-10"
+                }
+            },
+            {
+                "expr": {
+                    "type": 302,
+                    "value": "-1.5"
+                }
+            },
+            {
+                "expr": {
+                    "type": 305
+                }
+            },
+            {
+                "expr": {
+                    "type": 306
+                }
+            },
+            {
+                "expr": {
+                    "type": 304
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

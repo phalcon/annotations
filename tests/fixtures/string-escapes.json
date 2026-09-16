@@ -1,0 +1,34 @@
+[
+    {
+        "type": 300,
+        "name": "Escapes",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 303,
+                    "value": "a\\\"b"
+                }
+            },
+            {
+                "expr": {
+                    "type": 303,
+                    "value": "c\\'d"
+                }
+            },
+            {
+                "expr": {
+                    "type": 303,
+                    "value": "paren()"
+                }
+            },
+            {
+                "expr": {
+                    "type": 303,
+                    "value": "comma,"
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

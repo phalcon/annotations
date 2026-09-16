@@ -1,0 +1,3 @@
+/**
+ * @Ns(\Foo\Bar, \Leading, Mid\Dle)
+ */

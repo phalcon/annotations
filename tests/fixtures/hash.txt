@@ -1,0 +1,4 @@
+/**
+ * @Hash({key1: "a", key2: "b"})
+ * @HashEquals({key1 = "a"})
+ */

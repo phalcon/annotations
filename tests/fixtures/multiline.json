@@ -1,0 +1,28 @@
+[
+    {
+        "type": 300,
+        "name": "var",
+        "file": "eval code",
+        "line": 1
+    },
+    {
+        "type": 300,
+        "name": "Multi",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 301,
+                    "value": "1"
+                }
+            },
+            {
+                "expr": {
+                    "type": 301,
+                    "value": "2"
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 4
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "type": 300,
+        "name": "CaseInsensitive",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 304
+                }
+            },
+            {
+                "expr": {
+                    "type": 306
+                }
+            },
+            {
+                "expr": {
+                    "type": 305
+                }
+            },
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "nullable"
+                }
+            },
+            {
+                "expr": {
+                    "type": 307,
+                    "value": "truthy"
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

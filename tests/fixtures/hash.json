@@ -1,0 +1,53 @@
+[
+    {
+        "type": 300,
+        "name": "Hash",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 308,
+                    "items": [
+                        {
+                            "expr": {
+                                "type": 303,
+                                "value": "a"
+                            },
+                            "name": "key1"
+                        },
+                        {
+                            "expr": {
+                                "type": 303,
+                                "value": "b"
+                            },
+                            "name": "key2"
+                        }
+                    ]
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    },
+    {
+        "type": 300,
+        "name": "HashEquals",
+        "arguments": [
+            {
+                "expr": {
+                    "type": 308,
+                    "items": [
+                        {
+                            "expr": {
+                                "type": 303,
+                                "value": "a"
+                            },
+                            "name": "key1"
+                        }
+                    ]
+                }
+            }
+        ],
+        "file": "eval code",
+        "line": 1
+    }
+]

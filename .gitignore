@@ -1,0 +1,9 @@
+.idea/
+/vendor/
+composer.phar
+
+annotations.log
+
+# PHPUnit
+.phpunit.result.cache/
+tests/_output/

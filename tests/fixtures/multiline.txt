@@ -1,0 +1,10 @@
+/**
+ * Some prose that must be ignored.
+ *
+ * @var string
+ * @Multi(
+ *     1,
+ *     2
+ * )
+ * More prose.
+ */

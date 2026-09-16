@@ -1,0 +1,3 @@
+/**
+ * @CaseInsensitive(NULL, True, FALSE, nullable, truthy)
+ */
