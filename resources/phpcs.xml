@@ -4,9 +4,7 @@
     <arg value="-colors"/>
     <arg value="s"/>
     <arg value="p"/>
-    <rule ref="PSR12">
-        <exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
-    </rule>
+    <rule ref="Phalcon" />
     <file>../src</file>
     <file>../tests/unit</file>
 </ruleset>
