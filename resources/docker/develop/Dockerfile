@@ -46,7 +46,13 @@ apt-get install -yq --no-install-recommends \
     zip
 # Dev/test extensions
 install-php-extensions \
+    apcu \
+    phalcon-5.21.0 \
     xdebug
+# ext-phalcon is for the parity scripts only. It also defines Phalcon\Traits,
+# which replaces the phalcon/traits package. Load it on demand:
+#   php -d extension=phalcon tests/differential.php
+rm -f /usr/local/etc/php/conf.d/docker-php-ext-phalcon.ini
 # Locales
 sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 dpkg-reconfigure --frontend=noninteractive locales
